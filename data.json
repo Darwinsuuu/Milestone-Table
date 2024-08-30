@@ -1,0 +1,72 @@
+{
+    "milestoneTable": {
+
+        "data": [
+            {
+                "milestoneId": 1,
+                "milestoneName": "Milestone 1",
+                "totalModule": 2,
+                "dashboardProjectModuleViewModel": [
+                    {
+                        "moduleId": 125,
+                        "moduleName": "Asset Management",
+                        "totalUserStory": 0,
+                        "totalPercentageDone": 25,
+                        "totalPercentageRemaining": 75
+                    },
+                    {
+                        "moduleId": 126,
+                        "moduleName": "Asset Tracking",
+                        "totalUserStory": 1,
+                        "totalPercentageDone": 40,
+                        "totalPercentageRemaining": 60
+                    }
+                ]
+            },
+            {
+                "milestoneId": 2,
+                "milestoneName": "Milestone 2",
+                "totalModule": 2,
+                "dashboardProjectModuleViewModel": [
+                    {
+                        "moduleId": 127,
+                        "moduleName": "Maintenance Management Module",
+                        "totalUserStory": 1,
+                        "totalPercentageDone": 100,
+                        "totalPercentageRemaining": 0
+                    },
+                    {
+                        "moduleId": 128,
+                        "moduleName": "Check In - Check Out Module",
+                        "totalUserStory": 1,
+                        "totalPercentageDone": 60,
+                        "totalPercentageRemaining": 40
+                    }
+                ]
+            },
+            {
+                "milestoneId": 3,
+                "milestoneName": "Milestone 3",
+                "totalModule": 2,
+                "dashboardProjectModuleViewModel": [
+                    {
+                        "moduleId": 129,
+                        "moduleName": "Test Module",
+                        "totalUserStory": 1,
+                        "totalPercentageDone": 100,
+                        "totalPercentageRemaining": 0
+                    },
+                    {
+                        "moduleId": 130,
+                        "moduleName": "Test Module 2",
+                        "totalUserStory": 1,
+                        "totalPercentageDone": 60,
+                        "totalPercentageRemaining": 40
+                    }
+                ]
+            }
+        ],
+        "errorMessage": null,
+        "hasError": false
+    }
+}
