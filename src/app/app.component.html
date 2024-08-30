@@ -30,9 +30,11 @@
                     <ng-container *ngFor="let module of modules">
                         <div class="col-span-1 py-2 px-3 border font-medium relative h-[38px]">
                             
-                            <!-- After we determine week start. We can now compute the value left css (in %) to change the starting of the progress -->
-                            <div class="flex flex-row absolute justify-center items-center left-0 top-[3px] h-[30px] bg-blue-600 text-white"
-                                [style.width.%]="computeWidth(4, module.totalPercentageDone, getModuleProgress(module, milestone))">
+                            <!-- Change first args of getStringWeek() and computeWidth() to starting week. It will automatically compute the lenght and starting of progress -->
+                            <!-- Note: that this is assumingly all end date are from the 4th week. -->
+                            <div class="flex flex-row absolute justify-center items-center top-[3px] h-[30px] bg-blue-600 text-white"
+                                [style.left.%]="getStartingWeek(1)"
+                                [style.width.%]="computeWidth(1, module.totalPercentageDone, getModuleProgress(module, milestone))">
                                 <p class="!m-0">
                                     {{ getModuleProgress(module, milestone) ? module.totalPercentageDone + ' %' : '&nbsp;' }}
                                 </p>

@@ -53,12 +53,15 @@ export class AppComponent {
 
 
   computeWidth(columnNo: number, percent: number, isActive: boolean) {
-    let totalPrecentageDone = (columnNo * 100) * (percent / 100);
+    let totalPrecentageDone = ((5 - columnNo) * 100) * (percent / 100);
     if (!isActive) {
       return 0;
     }
     return totalPrecentageDone;
   }
 
+  getStartingWeek(columnNo: number) {
+    return (columnNo - 1) * 100 + ((columnNo - 1) + 2);
+  }
 
 }
