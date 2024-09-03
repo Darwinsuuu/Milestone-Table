@@ -32,14 +32,14 @@
                         "moduleId": 127,
                         "moduleName": "Maintenance Management Module",
                         "totalUserStory": 1,
-                        "totalPercentageDone": 100,
+                        "totalPercentageDone": 80,
                         "totalPercentageRemaining": 0
                     },
                     {
                         "moduleId": 128,
                         "moduleName": "Check In - Check Out Module",
                         "totalUserStory": 1,
-                        "totalPercentageDone": 60,
+                        "totalPercentageDone": 23,
                         "totalPercentageRemaining": 40
                     }
                 ]
@@ -53,14 +53,14 @@
                         "moduleId": 129,
                         "moduleName": "Test Module",
                         "totalUserStory": 1,
-                        "totalPercentageDone": 100,
+                        "totalPercentageDone": 65,
                         "totalPercentageRemaining": 0
                     },
                     {
                         "moduleId": 130,
                         "moduleName": "Test Module 2",
                         "totalUserStory": 1,
-                        "totalPercentageDone": 60,
+                        "totalPercentageDone": 62,
                         "totalPercentageRemaining": 40
                     }
                 ]

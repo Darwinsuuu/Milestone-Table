@@ -29,14 +29,22 @@
                     <!-- Progress Cells -->
                     <ng-container *ngFor="let module of modules">
                         <div class="col-span-1 py-2 px-3 border font-medium relative h-[38px]">
-                            
+
+
+                            <!-- Overlay for unfinished progress -->
+                            <div class="flex flex-row absolute justify-center items-center top-[3px] h-[30px] bg-blue-200 text-white"
+                                [style.left.%]="getStartingWeek(1)"
+                                [style.width.%]="computeOverlayWidth(1, getModuleProgress(module, milestone))">
+                            </div>
+
                             <!-- Change first args of getStringWeek() and computeWidth() to starting week. It will automatically compute the lenght and starting of progress -->
                             <!-- Note: that this is assumingly all end date are from the 4th week. -->
                             <div class="flex flex-row absolute justify-center items-center top-[3px] h-[30px] bg-blue-600 text-white"
                                 [style.left.%]="getStartingWeek(1)"
                                 [style.width.%]="computeWidth(1, module.totalPercentageDone, getModuleProgress(module, milestone))">
                                 <p class="!m-0">
-                                    {{ getModuleProgress(module, milestone) ? module.totalPercentageDone + ' %' : '&nbsp;' }}
+                                    {{ getModuleProgress(module, milestone) ? module.totalPercentageDone + ' %' :
+                                    '&nbsp;' }}
                                 </p>
                             </div>
                         </div>

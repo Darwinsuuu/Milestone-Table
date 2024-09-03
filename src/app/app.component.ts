@@ -44,7 +44,7 @@ export class AppComponent {
 
   getModuleProgress(module: any, milestoneModule: any): boolean {
     const milestoneModuleIds = milestoneModule.dashboardProjectModuleViewModel.map((module: any) => module.moduleId);
-    
+
     if (milestoneModuleIds.includes(module.moduleId)) {
       return true;
     }
@@ -62,6 +62,13 @@ export class AppComponent {
 
   getStartingWeek(columnNo: number) {
     return (columnNo - 1) * 100 + ((columnNo - 1) + 2);
+  }
+
+  computeOverlayWidth(columnNo: number, isActive: boolean) {
+    if (!isActive) {
+      return 0;
+    }
+    return (5 - columnNo) * 100;
   }
 
 }
